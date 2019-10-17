@@ -105,7 +105,7 @@ function songInfo(input) {
     )
 }
 
-// movie
+// movie **************
 function movieInfo(input) {
     if (input === undefined) {
         input = 'Austin Powers: International Man of Mystery'
@@ -133,12 +133,13 @@ function movieInfo(input) {
     })
 }
 
-// concert
+// concert ***************
 function concertInfo(input) {
     const queryUrl = `https://rest.bandsintown.com/artists/" + inputParameter + "/events?app_id=codingbootcamp`
     request(queryUrl, function(e, r, body) {
         // successful request
         if (!e && r.statusCode === 200) {
+            var concerts = JSON.parse(body)
             for (var i = 0; i < concerts.length; i++) {
                 console.log('--------concert info--------')
                 console.log('venue: ' + concerts[u].venue.name+'\n')
@@ -152,7 +153,7 @@ function concertInfo(input) {
     })
 }
 
-// rotten tomatoes
+// rotten tomatoes ***********
 function rottenTomatoes (data) {
     return data.Ratings.find(function (item) {
         return item.Source === 'Rotten Tomatoes'
@@ -163,7 +164,7 @@ function rottenTomatoesValue (data) {
     return rottenTomatoes(data).Value
 }
 
-// random.txt
+// random.txt ****************
 function backstreetBoys() {
     fs.readFile('random.txt', 'utf8', function(e, data) {
         if (e) {
