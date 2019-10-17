@@ -1,30 +1,30 @@
 // make it so liri.js can take in one of the following commands:
 // --------------------
-// `concert-this`
-// `spotify-this-song`
-// `movie-this`
-// `do-what-it-says`
+// `concertThis`
+// `spotifyThis`
+// `movieThis`
+// `doWhatItSays`
 // --------------------
 
 // command line should do the following:
 
-// `node liri.js concert-this <artist name>`
+// `node liri.js concertThis <artist name>`
 // ^^^ this should:
 // **search bands in town API for an artist and render the {name of venue, venue location, date of event (using moment)}
 
-// `node liri.js spotify-this-song <song name>`
+// `node liri.js spotifyThis <song name>`
 // ^^^ this should:
 // **shows info from spotify API {artist, song name, preview link of song, album}
 
-// `node liri.js movie-this <movie name>`
+// `node liri.js movieThis <movie name>`
 // ^^^ this should:
 // ***output to terminal window {movie title, year, IMDB rating, rotten tomatoes rating, production country, language, plot, actors}
 
-// `node liri.js do-what-it-says`
+// `node liri.js doWhatItSays`
 // ^^^ this should:
-// ***using 'fs' node package, takes text in random.txt and uses it to call LIRI's commands {it should run `spotify-this-song` for 'i want it that way' in random.txt}
+// ***using 'fs' node package, takes text in random.txt and uses it to call LIRI's commands {it should run `spotifyThis` for 'i want it that way' in random.txt}
 
-//  0     1           2              3
+//  0     1           2          3
 // node liri.js spotifyThis <song name>
 
 //  0     1         2           3
