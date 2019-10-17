@@ -65,6 +65,8 @@ will output-
 
 - https://mercedeswalsh.github.io/liriNodeApp/
 
+---
+
 **Technologies used in LIRI**
 
 - Node.js
