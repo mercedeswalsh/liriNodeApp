@@ -12,7 +12,7 @@
 
 The following input-
 
-> node liri.js spotifyThisSong Here Comes The Sun
+> node liri.js spotifyThis here comes the sun
 
 will output-
 
@@ -23,7 +23,7 @@ will output-
 
 The following input-
 
-> node liri.js movieThis Zombieland
+> node liri.js movieThis zombieland
 
 will output-
 
@@ -35,6 +35,16 @@ will output-
 > - English (language of movie)
 > - plot of movie
 > - actors in movie
+
+The following input- 
+
+> node liri.js concertThis the band camino
+
+will output- 
+
+> - El Rey (name of venue)
+> - Los Angeles, CA (location of venue)
+> - 10/14/2019 (date of venue)
 
 The following input-
 
@@ -53,9 +63,7 @@ will output-
 
 **Link to deployed version of app-**
 
-- insert link here
-
----
+- https://mercedeswalsh.github.io/liriNodeApp/
 
 **Technologies used in LIRI**
 
