@@ -16,10 +16,10 @@ The following input-
 
 will output-
 
-> The Beatles (artist)
-> Here Comes The Sun (song name)
-> preview link of song from Spotify
-> Abbey Road (album)*
+> - The Beatles (artist)
+> - Here Comes The Sun (song name)
+> - preview link of song from Spotify
+> - Abbey Road (album)*
 
 The following input-
 
@@ -27,14 +27,14 @@ The following input-
 
 will output-
 
-> Zombieland (movie name)
-> 2009 (year movie came out)
-> 7.6/10 (IMDB rating)
-> 90% (Rotten Tomatoes rating)
-> USA (country of production)
-> English (language of movie)
-> plot of movie
-> actors in movie*
+> - Zombieland (movie name)
+> - 2009 (year movie came out)
+> - 7.6/10 (IMDB rating)
+> - 90% (Rotten Tomatoes rating)
+> - USA (country of production)
+> - English (language of movie)
+> - plot of movie
+> - actors in movie*
 
 The following input-
 
@@ -42,10 +42,10 @@ The following input-
 
 will output-
 
-> Backstreet Boys
-> I Want It That Way
-> preview link of I Want It That Way
-> The Hits--Chapter One*
+> - Backstreet Boys
+> - I Want It That Way
+> - preview link of I Want It That Way
+> - The Hits--Chapter One*
 
 *(this information comes from the random.txt file that is stored)*
 
