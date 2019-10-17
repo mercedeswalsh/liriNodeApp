@@ -34,7 +34,7 @@ will output-
 > - USA (country of production)
 > - English (language of movie)
 > - plot of movie
-> - actors in movie*
+> - actors in movie
 
 The following input-
 
@@ -47,7 +47,7 @@ will output-
 > - preview link of I Want It That Way
 > - The Hits--Chapter One*
 
-*(this information comes from the random.txt file that is stored)*
+*(doWhatItSays info comes from the random.txt file that is stored)*
 
 ---
 
