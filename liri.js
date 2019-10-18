@@ -42,6 +42,7 @@ require('dotenv').config()
 // require constants
 const request = require('request')
 const fs = require('fs')
+const axios = require('axios')
 const keys = require('./keys.js')
 const Spotify = require('node-spotify-api')
 const spotify = new Spotify(keys.spotify)
@@ -105,14 +106,15 @@ function songInfo(input) {
     )
 }
 
-// movie **************
+// movie 
+// everything working except rotten tomatoes
 function movieInfo(input) {
     if (input === undefined) {
         input = 'Austin Powers: International Man of Mystery'
         console.log('------------------')
         console.log('watch Austin Powers. https://www.imdb.com/title/tt0118655/')
     }
-    const queryUrl = 'http://www.omdbapi.com/?t=" + inputParameter + "&y=&plot=short&apikey=trilogy'
+    const queryUrl = 'http://www.omdbapi.com/?t=' + input + '&y=&plot=short&apikey=trilogy'
     request(queryUrl, function (e, r, body) {
         // successful request
         if (!e && r.statusCode === 200) {
@@ -121,7 +123,7 @@ function movieInfo(input) {
             console.log('title: ' + movies.Title)
             console.log('release year: ' + movies.Year)
             console.log('IMDB rating: ' + movies.imdbRating)
-            console.log('rotton tomatoes rating: ' + rottenTomatoesValue(movies))
+            // console.log('rotton tomatoes rating: ' + rottenTomatoesValue(movies))
             console.log('production country: ' + movies.Country)
             console.log('language: ' + movies.Language)
             console.log('plot: ' + movies.Plot)
@@ -153,16 +155,16 @@ function concertInfo(input) {
     })
 }
 
-// rotten tomatoes ***********
-function rottenTomatoes (data) {
-    return data.Ratings.find(function (item) {
-        return item.Source === 'Rotten Tomatoes'
-    })
-}
+// // rotten tomatoes ***********
+// function rottenTomatoes (data) {
+//     return data.Ratings.find(function (item) {
+//         return item.Source === 'Rotten Tomatoes'
+//     })
+// }
 
-function rottenTomatoesValue (data) {
-    return rottenTomatoes(data).Value
-}
+// function rottenTomatoesValue (data) {
+//     return rottenTomatoes(data).Value
+// }
 
 // random.txt ****************
 function backstreetBoys() {
