@@ -21,6 +21,10 @@ will output-
 > - preview link of song from Spotify
 > - Abbey Road (album)*
 
+Screenshot of terminal output-
+
+![spotifyThis](./images/spotifyThis.png)
+
 The following input-
 
 > node liri.js movieThis zombieland
@@ -35,6 +39,10 @@ will output-
 > - English (language of movie)
 > - plot of movie
 > - actors in movie
+
+Screenshot of terminal output-
+
+![movieThis](./images/movieThis.png)
 
 The following input- 
 
@@ -56,6 +64,10 @@ will output-
 > - I Want It That Way
 > - preview link of I Want It That Way
 > - The Hits--Chapter One*
+
+Screenshot of terminal output-
+
+![doWhatItSays](./images/doWhatItSays.png)
 
 *(doWhatItSays info comes from the random.txt file that is stored)*
 

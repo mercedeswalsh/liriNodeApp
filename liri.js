@@ -137,7 +137,7 @@ function movieInfo(input) {
 
 // concert ***************
 function concertInfo(input) {
-    const queryUrl = `https://rest.bandsintown.com/artists/" + inputParameter + "/events?app_id=codingbootcamp`
+    const queryUrl = `https://rest.bandsintown.com/artists/" + ${input} + "/events?app_id=codingbootcamp`
     request(queryUrl, function(e, r, body) {
         // successful request
         if (!e && r.statusCode === 200) {
@@ -166,14 +166,11 @@ function concertInfo(input) {
 //     return rottenTomatoes(data).Value
 // }
 
-// random.txt ****************
-function backstreetBoys() {
-    fs.readFile('random.txt', 'utf8', function(e, data) {
-        if (e) {
-            return console.log(e)
-        }
-        const dataArray = data.split(',')
-        input(dataArray[0], dataArray[1])
-    })
-}
-
+// random.txt
+function backstreetBoys () {
+    fs.readFile('random.txt', "utf8", function(error, data){
+      var txt = data.split(',');
+  
+      songInfo(txt[1]);
+    });
+  }
