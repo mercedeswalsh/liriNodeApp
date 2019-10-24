@@ -136,6 +136,7 @@ function movieInfo(input) {
 }
 
 // concert ***************
+// currently working on trying to get to work in terminal
 function concertInfo(input) {
     const queryUrl = `https://rest.bandsintown.com/artists/" + ${input} + "/events?app_id=codingbootcamp`
     request(queryUrl, function(e, r, body) {
