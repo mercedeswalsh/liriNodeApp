@@ -102,7 +102,3 @@ Screenshot of terminal output-
 - Developer of LIRI through Coding Bootcamp at UCI
 
 ---
-
-**Placeholder to add photos**
-
-- 
